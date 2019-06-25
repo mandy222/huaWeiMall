@@ -1,0 +1,547 @@
+/* 顶部广告 */
+#topAd {
+    height: 90px;
+    overflow: hidden;
+    background: url(../img/huaweiPrefecture/topAd.jpg)  50% 0px no-repeat;
+}
+#topAd>a {
+    display: block;
+    height: 90px;
+}
+#topAdC {
+    position: relative;
+}
+#close {
+    height: 24px;
+    width: 24px;
+    background-color: #51515154;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    z-index: 9;
+    position: absolute;
+    top: 6px;
+    right: 0
+}
+#close a {
+    display: block;
+    height: 24px;
+    width: 24px;
+    color: #FFFFFFCB;
+    font-size: 14px;
+}
+.indexLogo {
+    height: 36px;
+}
+#logoMid {
+    color: #666;
+}
+#navBottomLinkBox {
+    margin-right: 30px;
+}
+
+/* 透明度轮播 */
+#transpSilder {
+    height: 448px;
+    position: relative;
+}
+#picBox {
+    height: 448px;
+    position: relative; 
+}
+#picBox a {
+    display: block;
+    height: 448px;
+    width: 100%;
+}
+.silderPic {
+    height: 448px;
+    width: 100%;
+    position: absolute;
+    opacity: 1;
+    transition: opacity .5s;
+}
+.silderPic:nth-child(1) {
+    /*50% 居中  0px 距离顶部0px*/
+    background: url(../img/huaweiPrefecture/silder01.jpg) 50% 0px no-repeat;
+}
+.silderPic:nth-child(2) {
+    background: url(../img/huaweiPrefecture/silder02.jpg) 50% 0px no-repeat;
+}
+.silderPic:nth-child(3) {
+    background: url(../img/huaweiPrefecture/silder03.jpg) 50% 0px no-repeat;
+}
+.silderPic:nth-child(4) {
+    background: url(../img/huaweiPrefecture/silder04.jpg) 50% 0px no-repeat;
+}
+.silderPic:nth-child(5) {
+    background: url(../img/huaweiPrefecture/silder05.jpg) 50% 0px no-repeat;
+}
+.silderPic:nth-child(6) {
+    background: url(../img/huaweiPrefecture/silder06.jpg) 50% 0px no-repeat;
+}
+.silderPic:nth-child(7) {
+    background: url(../img/huaweiPrefecture/silder07.jpg) 50% 0px no-repeat;
+}
+.silderPic:nth-child(8) {
+    background: url(../img/huaweiPrefecture/silder08.jpg) 50% 0px no-repeat;
+}
+.silderPic:nth-child(9) {
+    background: url(../img/huaweiPrefecture/silder09.jpg) 50% 0px no-repeat;
+}
+.silderPic:nth-child(10) {
+    background: url(../img/huaweiPrefecture/silder10.jpg) 50% 0px no-repeat;
+}
+.silderPic:nth-child(11) {
+    background: url(../img/huaweiPrefecture/silder11.jpg) 50% 0px no-repeat;
+}
+.silderPic:nth-child(12) {
+    background: url(../img/huaweiPrefecture/silder12.jpg) 50% 0px no-repeat;
+}
+#BtnsAndSilderNext {
+    position: relative;
+}
+#btnBox {
+    height: 14px;
+    width: 280px;
+    position: absolute;
+    z-index: 9;
+    top: -40px;
+    right: 440px;
+}
+.silderBtn {
+    float: left;
+    width: 12px;
+    height: 12px;
+    margin-left: 7px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.silderBtnActic {
+    background-color: white;
+}
+/**** 商品页面 ***/
+.goodsTitle {
+    text-align: center;
+    font-size: 30px;
+    color: #000;
+    line-height: 50px;
+    font-weight: 400;
+    position: relative;
+}
+.goodsTitle::before {
+    content: "";
+    width: 24px;
+    height: 4px;
+    display: block;
+    background: #900;
+    margin: 0 auto;
+}
+/* 华为精品 */
+.mainParts {
+    margin-top: 60px;
+    position: relative;
+}
+#qualityGoods {
+    height: 545px;
+}
+#qualityGoodsTop {
+    height: 300px;
+}
+.topGoods {
+    float: left;
+    width: 298.5px;
+    height: 279px;
+    margin-bottom: 20px;
+    border-top: 1px solid #C0C0C09A;
+    border-right: 1px solid #C0C0C09A;
+    border-bottom: 1px solid #C0C0C09A;
+    position: relative;
+}
+.topGoods:first-child {
+    border-left: 1px solid #C0C0C09A;
+}
+.topGoods img {
+    width: 100%;
+    height: 100%;
+}
+.topGoods span {
+    width: 0;
+    height: 4px;
+    display: block;
+    background-color: #900;
+    position: absolute;
+    top: 0;
+    right: auto;
+    bottom: auto;
+    left: 0;
+    z-index: 10;
+    transition: width .5s;
+}
+#qualityGoodsBottom {
+    height: 190px;
+}
+.bottomGoods {
+    float: left;
+    width: 386px;
+    height: 190px;
+    margin-right: 21px;
+    position: relative;
+}
+.bottomGoods:last-child {
+    margin-right: 0;
+}
+.bottomGoods img {
+    width: 100%;
+    height: 100%;
+}
+.bottomGoodsRightBox {
+    width: 164px;
+    height: 160px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: auto;
+    background: #999;
+    background: rgba(0,0,0,0.4);
+    display: block;
+    text-align: left;
+    z-index: 10;
+    padding: 30px 10px 0 16px;
+    color: white;
+}
+.goodsName {
+    font-size: 18px;
+    line-height: 20px;
+    padding-bottom: 2px;
+}
+.goodsDescribe {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.goodsPrice {
+    font-size: 14px;
+    line-height: 32px;
+    margin-top: 16px;
+    padding-top: 2px;
+}
+.goodsPrice::before {
+    content: "";
+    width: 24px;
+    height: 2px;
+    display: block;
+    background: #fff;
+}
+.bottomGoods:hover .bottomGoodsRightBox,
+ #thirdPersonalComputer:hover .bottomGoodsRightBox {
+    background-color: rgba(153,0,0,0.8);
+}
+/* 手机 + 平板&穿戴 */
+.firstStyle {
+    height: 695px;
+}
+#personalComputer {
+    height: 850px;
+}
+.goodsNav {
+    height: 34.5px;
+    text-align: center;
+    margin-left: 0;
+    line-height: 32px;    
+}
+.goodsNav li {
+    display: inline-block;
+    line-height: 34px;
+}
+.goodsNav li a {
+    font-size: 14px;
+    color: #717171;
+    margin: 0 10px;
+}
+.goodsNav li a:hover {
+    color: #900;
+}
+.moreBtn {
+    position: absolute;
+    right: 0;
+    top: 53px;
+}
+.moreBtn a {
+    display: block;
+    width: 42px;
+    height: 27px;
+    border: 1px solid #b2b2b2;
+    font-size: 12px;
+    padding: 0 10px 0 14px;
+    text-align: left;
+    color: #3a3a3a;
+    line-height: 27px;
+}
+.moreBtn a:after {
+    content: "";
+    display: inline-block;
+    margin-left: 10px;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-left: 6px solid #b2b2b2;
+    border-bottom: 4px solid transparent;
+}
+.moreBtn a:hover {
+    color: #900;
+    border: 1px solid #900;
+}
+ .moreBtn:hover a:after {
+    border-left: 6px solid #900;
+}
+.mobilePhoneGoodsBox {
+    margin-top: 14px;
+    height: 592px;
+}
+.mobilePhoneGoodsBox li {
+    float: left;
+    position: relative;
+}
+.firstMobile {
+    width: 291px;
+    height: 592px;
+}
+.secondMobile {
+    width: 592px;
+    height: 290px;
+    margin: 0 12px 12px 12px;
+}
+.thirdMobile {
+    width: 291px;
+    height: 290px;
+    margin-bottom: 12px;
+}
+.otherMoblie {
+    margin-left: 12px;
+}
+.mobilePhoneInf {
+    height: 84px;
+    width: 222px;
+    position: absolute;
+    top: 18px;
+    left: 31px;
+}
+.mobilePhoneName::before {
+    content: "";
+    width: 24px;
+    height: 2px;
+    display: block;
+    background: #900;
+    margin-bottom: 17px;
+}
+.mobilePhoneName {
+    font-size: 18px;
+    line-height: 20px;
+    color: #000;
+    padding-bottom: 2px;
+}
+.mobilePhonePrice {
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 34px;
+    color: #900;
+}
+.fontWhite p {
+    color: white;
+}
+/* 笔记本电脑 */
+#personalComputerBox {
+    height: 746px;
+    margin-top: 15px;
+}
+#personalComputerBox li {
+    position: relative;
+    float: left;
+    text-align: center;
+}
+#firstPersonalComputer {
+    width: 400px;
+    height: 746px;
+}
+.changeBorder span {
+    width: 0;
+    height: 4px;
+    display: block;
+    background: #900;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: width .5s;
+}
+.secondPersonalComputer {
+    width: 399px;
+    height: 372px;
+    border: 1px solid #eaeaea;
+    border-left: none;
+}
+.secondPersonalComputer img {
+    width: 200px;
+    height: 200px;
+    margin: 40px auto 0;
+}
+.personalComputerName {
+    margin-top: 30px;
+    font-size: 18px;
+    color: #3a3a3a;
+    line-height: 20px;    
+}
+.personalComputerDescribe {
+    font-size: 14px;
+    color: #a4a4a4;
+    line-height: 24px;
+}
+.personalComputerPrice {
+    padding-top: 8px;
+    font-size: 14px;
+    color: #900;
+    line-height: 28px;
+}
+.personalComputerPrice::before {
+    content: "";
+    width: 24px;
+    height: 2px;
+    background: #900;
+    display: block;
+    margin: 0 auto;
+}
+#thirdPersonalComputer {
+    width: 800px;
+    height: 371px;
+}
+.thirdPersonalComputerRightBox {
+    width: 368px;
+    height: 298px;
+    padding: 74px 10px 0 22px;
+}
+.thirdComputerGoodsName {
+    font-size: 24px;
+    line-height: 36px;
+    max-height: 72px;
+}
+.thirdComputerGoodsDescribe {
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: 400;
+}
+.thirdComputerGoodsPrice {
+    font-size: 18px;
+    line-height: 56px;
+    margin-top: 18px;
+    padding-top: 2px;
+}
+.thirdComputerGoodsPrice::before {
+    content: "";
+    width: 30px;
+    height: 3px;
+    display: block;
+    background: #fff;
+}
+/* 智能家居 + 热销配件 */
+.secondStyle {
+    height: 960px;
+}
+#hotParts {
+    margin-bottom: 60px;
+}
+.goodsSilder {
+    margin-top: 10px;
+    height: 254px;
+    border: 1px solid #eaeaea;
+    border-left: none;
+    position: relative;
+    overflow: hidden;
+}
+.goodsSilderBox {
+    width: 2143.11px;
+    height: 254px;
+    overflow: hidden;
+    position: absolute;
+    transition: .5s;
+    left: 0;
+}
+.goodsSilderBox li {
+    float: left;
+    border-left: 1px solid #eaeaea;
+    width: 213px;
+    height: 256px;
+    position: relative;
+    text-align: center;
+}
+.goodsSilderBox li img {
+    width: 120px;
+    height: 120px;
+    margin: 22px 0 12px 0;
+}
+.goodsSilderBox span {
+    width: 0;
+    height: 4px;
+    display: block;
+    background: #900;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: width .5s;
+}
+.smartHomeName {
+    font-size: 18px;
+    color: #3a3a3a;
+    line-height: 20px;
+    padding: 0 20px 2px;
+    width: 176px;
+    height: 40px;
+}
+.smartHomeDescribe {
+    font-size: 12px;
+    color: #a4a4a4;
+    line-height: 26px;
+}
+.smartHomePrice {
+    font-size: 14px;
+    color: #900;
+    line-height: 18px;
+}
+.sliderBtns {
+    position: absolute;
+    height: 75px;
+    width: 22px;
+    background: rgba(204,204,204,0.9);
+    height: 75px;   
+    top: 80px;
+    cursor: pointer;
+}
+.sliderBtns:hover {
+    background-color: rgba(153,153,153,0.9);
+    cursor: pointer;
+}
+.sliderBtnsDisabled, .sliderBtnsDisabled:hover {
+    background: #f0f0f0;
+    cursor: not-allowed;
+}
+.sliderBtns:first-child {
+    left: 0;
+}
+.sliderBtns:last-child {
+    right: 0;
+}
+.left, .right {
+    display: block;
+    margin: 28px auto;
+    height: 16px;
+    width: 11px;
+    background-image: url(../img/huaweiPrefecture/icon.png);    
+}
+.left {
+    background-position: -71px 0;
+}
+.right {
+    background-position: -82px 0;;
+}

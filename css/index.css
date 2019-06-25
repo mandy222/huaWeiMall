@@ -1,0 +1,805 @@
+/********* header **************/
+/* 顶部广告 */
+#topAd {
+    height: 90px;
+    overflow: hidden;
+    background: url(../img/index/ad.jpg)  50% 0px no-repeat;
+}
+#topAd>a {
+    display: block;
+    height: 90px;
+}
+#topAdC {
+    position: relative;
+}
+#close {
+    height: 24px;
+    width: 24px;
+    background-color: #51515154;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    z-index: 9;
+    position: absolute;
+    top: 6px;
+    right: 0
+}
+#close a {
+    display: block;
+    height: 24px;
+    width: 24px;
+    color: #FFFFFFCB;
+    font-size: 14px;
+}
+/* 首页透明度轮播 */
+#transpSilder {
+    height: 550px;
+    position: relative;
+}
+#picBox {
+    height: 550px;
+    position: relative; 
+}
+#picBox a {
+	display: block;
+	height: 550px;
+	width: 100%;
+}
+.silderPic {
+    height: 550px;
+    width: 100%;
+    position: absolute;
+    opacity: 1;
+    transition: opacity .5s;
+}
+.silderPic:nth-child(1) {
+	/*50% 居中  0px 距离顶部0px*/
+	background: url(../img/index/viewpager01.jpg) 50% 0px no-repeat;
+}
+.silderPic:nth-child(2) {
+	background: url(../img/index/viewpager02.jpg) 50% 0px no-repeat;
+}
+.silderPic:nth-child(3) {
+	background: url(../img/index/viewpager03.jpg) 50% 0px no-repeat;
+}
+.silderPic:nth-child(4) {
+	background: url(../img/index/viewpager04.jpg) 50% 0px no-repeat;
+}
+.silderPic:nth-child(5) {
+	background: url(../img/index/viewpager05.jpg) 50% 0px no-repeat;
+}
+.silderPic:nth-child(6) {
+	background: url(../img/index/viewpager06.jpg) 50% 0px no-repeat;
+}
+.silderPic:nth-child(7) {
+	background: url(../img/index/viewpager07.jpg) 50% 0px no-repeat;
+}
+.silderPic:nth-child(8) {
+	background: url(../img/index/viewpager08.jpg) 50% 0px no-repeat;
+}
+#BtnsAndSilderNext {
+	position: relative;
+}
+#btnBox {
+    height: 14px;
+    width: 180px;
+    position: absolute;
+    z-index: 9;
+    top: -100px;
+    right: 0;
+}
+.silderBtn {
+    float: left;
+    width: 12px;
+    height: 12px;
+    margin-left: 7px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.silderBtnActic {
+    background-color: white;
+}
+#silderBothSides {
+	position: absolute;
+	height: 60px;
+	width: 990px;
+	top: -330px;
+	right: 0;
+    z-index: 9;
+}
+#before, #next {
+    width: 60px;
+    height: 60px;
+    background-color: #8484843F;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    font-weight: 50;
+    color: white;
+}
+#before {
+    float: left;
+}
+#next {
+    float: right;
+}
+#before:hover, #next:hover {
+    background-color: #4F4F4F7B;
+}
+/* 商品分类 */
+#shopClassifiBox {
+	height: 440px;
+	width: 200px;
+	position: absolute;
+	top: -530px;
+	left: 0;
+	background-color: #FFFFFFCB;
+	z-index: 90;
+	border-radius: 12px;
+}
+#shopClassifi {
+	height: 440px;
+	width: 200px;
+	border-radius: 12px;
+}
+.shopClassifiInfBox {
+	height: 73px;
+	width: 200px;
+	z-index: 9;
+}
+.shopClassifiInf {
+	height: 50px;
+	width: 150px;
+	border-bottom: .5px solid #C0C0C0AF;
+	padding: 12px 0 12px 0;
+	margin-left: 25px;
+	z-index: 2;
+}
+.shopClassifiInfBox:hover .phoneMenu {
+	display: block;
+}
+.shopClassifiInfBox:hover {
+	background-color: white;
+}
+.shopClassifiInfBox:hover .shopClassifiInf {
+	border-bottom: .5px solid #FFFFFF00;
+}
+.shopClassifiInfBox:first-child:hover {
+	border-radius: 12px 12px 0 0;
+}
+.shopClassifiInfBox:last-child:hover {
+	border-radius: 0 0 12px 12px;
+}
+.bGoods {
+	display: block;
+	height: 24px;
+	font-size: 16px;
+}
+.bGoods a {
+	color: #848484;
+}
+.sGoods a {
+	color: #a6a6a6;
+	font-size: 14px;
+}
+.phoneMenuBox {
+	float: left;
+}
+.phoneMenu {
+	height: 440px;
+	position: absolute;
+	right: -664px;
+	top: 0px;
+	background-color: white;
+	border-radius: 0 12px 12px 0; 
+	display: none;
+}
+.phoneMenuCompt {
+	right: -230px;
+}
+.phoneMenuCompt .phoneMenuBox {
+	float: none;
+}
+.phoneMenuCompt .phoneMenuBox .phoneLinks {
+	margin-right: 15px;
+}
+.phoneMenuCompt .lookMoreBtn {
+	margin-left: 15px;
+}
+.phoneLinks {
+	height: 80px;
+	width: 204px;
+	margin: 24px 0px 23px 20px;
+	border-radius: 12px;
+}
+.phoneLinks:hover {
+	background-color: #F9F9F9; 
+}
+.phoneLinks img {
+	width: 56px;
+	height: 56px;
+	margin: 12px 6px 0 6px;
+	float: left;
+}
+.phoneLinks span {
+	float: left;
+	margin-top: 30px;
+	margin-left: 10px;
+	color: #777;
+	font-size: 13px;
+}
+.lookMoreBtn {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	display: block;
+	width: 114px;
+	height: 44px;
+	border-radius: 44px;
+	border: 1px solid #f2f2f2;
+	text-align: right;
+	font-size: 13px;
+    color: #a7a7a7;
+    line-height: 44px;
+    padding-right: 20px;
+}
+.lookMoreBtn:hover {
+	color: #a7a7a7;
+}
+.phoneMenuBox:last-child .phoneLinks:hover {
+	background-color: white; 
+}
+.lookMoreBtn::before {
+	content: '';
+	display: block;
+	width: 44px;
+	height: 44px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	border-radius: 44px;
+	border: 1px solid #f2f2f2;
+}
+.lookMoreBtn::after {
+	content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-left: 5px solid #c0c0c0;
+    position: absolute;
+    top: 17px;
+    left: 22px;
+}
+#bgSilder {
+	height: 72px;
+	position: absolute;
+	top: 495px;
+	background-image: url(../img/index/bg-slide.png);
+	background-size: 100% 100%;
+}
+/* 轮播下部 用户活动 */
+#userActivities {
+	position: absolute;
+	top: -70px;
+	z-index: 9;
+	background-color: white;
+	height: 88px;
+	border-radius: 12px;
+	box-shadow: 0 2px 26px rgba(0,0,0,0.07);
+}
+#loginAndRegister {
+	width: 250px;
+	height: 52px;
+	padding-left: 26px;
+	margin: 18px 0; 
+	border-right: .5px solid #C0C0C09C;
+}
+#loginAndRegister img {
+	width: 52px;
+	height: 52px;
+	display: block;
+	float: left;
+}
+#loginAndRegisterTop, #loginAndRegisterBottom {
+	height: 22px;
+	width: 147px;
+	margin:3px 10px;
+}
+#loginAndRegisterTop {
+	font-size: 14px;
+    color: #999;
+    line-height: 22px;
+}
+#loginAndRegisterTop span {
+	color: #333;
+	font-size: 14px;
+	display: inline-block;
+	margin: 0 3px;
+}
+.smallBox {
+	display: block;
+	height: 24px;
+	width: 68px;
+	border-radius: 5px;
+	font-size: 12px;
+	line-height: 24px;
+	text-align: center;
+}
+.smallBox:first-child {
+	border: 1px solid #e47b7f;
+	height: 22px;
+}
+.smallBox:first-child a {
+	color: #de5b60;
+}
+.smallBox:first-child:hover {
+	background-color: #de5b60;
+}
+.smallBox:first-child:hover a {
+	color: white;
+}
+.smallBox:last-child {
+	background-color: #595454;    
+}
+.smallBox:last-child a {
+	color: #fde4b3;
+}
+#activities {
+	height: 64px;
+	width: 660px;
+	margin: 12px 0;
+}
+#activitiesBox {
+	margin: 0 30px;
+}
+.activitiesInf {
+	float: left;
+	width: 84px;
+	height: 64px;
+	margin: 0 8px;
+}
+.activitiesLogo {
+	height: 40px;
+	width: 40px;
+	display: block;
+	margin: 0 auto;
+	background-image: url(../img/index/ativities_logo.png);
+}
+.activitiesInf a {
+	display: inline-block;
+	width: 84px;
+	text-align: center;
+	color: #999;
+	margin-top: 8px; 
+}
+.activitiesInf:nth-child(2) .activitiesLogo {
+	background-position: -40px 0;
+}
+.activitiesInf:nth-child(3) .activitiesLogo {
+	background-position: -80px 0;
+}
+.activitiesInf:nth-child(4) .activitiesLogo {
+	background-position: -120px -2px;
+}
+.activitiesInf:nth-child(5) .activitiesLogo {
+	background-position: -160px 0;
+}
+.activitiesInf:nth-child(6) .activitiesLogo {
+	background-position: -200px -1px;
+}
+#noticBox {
+	width: 262px;
+	height: 88px;
+	float: right;
+	border-radius: 0 12px 12px 0;
+	border-left: .5px solid #C0C0C09C;
+}
+.noticSmallBox {
+	height: 44px;
+	width: 242px;
+	position: relative;
+}
+#noticBoxTop {
+	border-bottom: .5px solid #C0C0C09C;
+	padding-left: 20px;
+	line-height: 44px;
+	font-size: 14px;
+	font-weight: bold;
+	overflow: hidden;
+}
+#markNoticLink {
+	float: left;
+	color: #777;
+}
+#markNoticLink:hover {
+	color: #777;
+}
+.markNotics {
+	display: block;
+	height: 38px;
+	width: 190px;
+	margin: 1px 0 1px 10px;
+	float: left;
+	font-weight: normal;
+	font-size: 12px;
+	color: #6f6f6f;
+}
+.markNotics:hover,
+#noticSmallBoxC a:hover .noticSmallBoxBottom {
+	color: #CF0A2C;
+}
+#markNoticsTextBox{
+	float: left;
+	height: 128px;
+	width: 240px;
+	position: absolute;
+	top: 0;
+	left: 55px;
+}
+#noticBoxbottom {
+	padding-left: 20px;
+	overflow: hidden;
+}
+#noticSmallBoxC {
+	height: 20px;
+	width: 240px;
+	margin: 12px 0;
+}
+.noticSmallBoxBottom {
+	line-height: 20px;
+	color: #6f6f6f;
+	font-size: 12px;
+	float: left;
+}
+.noticBoxbottomLogo {
+	float: left;
+	height: 20px;
+	width: 20px;
+	margin: 0 14px 0 2px;
+	background-image: url(../img/index/ativities_logo.png);
+	background-position: -240px 0;
+}
+#nameIdetif {
+	background-position: -260px 0;
+}
+#buySure {
+	background-position: -280px 0;
+}
+
+/********* main **************/
+#main {
+	margin-bottom: 60px;
+}
+/* 顶部商品 */
+#topGoods {
+	height: 200px;
+	margin: 40px 0 10px 0;
+}
+.topGoodsInfo {
+	float: left;
+	height: 200px;
+	width: 290px;
+	margin-right: 13px;
+	border-radius: 10px;
+}
+.goods:hover {
+	transition: .5s;
+	box-shadow: 0 12px 36px rgba(0,0,0,0.1);
+}
+.goods {
+	border-radius: 10px;
+}
+.topGoodsInfo:last-child {
+	margin-right: 0;
+}
+.topGoodsInfo img {
+	border-radius: 10px;
+}
+/* 热销单品 */
+#hotItem {
+	height: 670px;
+}
+.goodsTitle {
+	height: 65px;
+}
+.goodsTitle h2 {
+	font-size: 26px;
+    color: #333;
+    padding: 27px 0 13px 0;
+    line-height: 1;
+    font-weight: 400;
+}
+.almostGoodsBox {
+	width: 230px;
+	height: 290px;
+	float: left;
+	background-color: #f9f9f9;
+	margin-left: 12.5px;
+	margin-bottom: 12px;
+}
+.almostGoodsBox img {
+	display: block;
+	width: 150px;
+    height: 150px;
+    margin: 35px auto 0;
+}
+.goodsText {
+	margin: 8px auto;
+	width: 150px;
+	text-align: center;
+}
+.goodsName {
+	font-size: 14px;
+    font-weight: 400;
+    color: #3a3a3a;
+}
+.goodsDescrib {
+	font-size: 12px;
+    font-weight: 400;
+    color: #777;
+}
+.price {
+	color: #d0021b;
+    font-size: 14px;
+}
+/* 精品推荐 */
+#recommendation {
+	height: 390px;
+}
+#recommendationBox {
+	height: 311px;
+	width: 3630px;
+	position: absolute;
+	left: 0;
+	transition: left .5s;
+}
+.recommendationGoodsBox {
+	width: 230px;
+	height: 310px;
+	margin: 0 5.5px;
+	float: left;
+}
+.recommendGoods {
+	width: 230px;
+	height: 200px;
+	padding-top: 36px;
+	position: relative;
+	box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+.recommendGoods img {
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+	display: block;
+}
+.recommendGoodsDescrib {
+	display: block;
+	height: 36px;
+	width: 230px;
+	background-color: #f3f3f3;
+    color: #777;
+    font-size: 14px;
+    line-height: 36px;
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+.recommendBtn {
+	display: block;
+	width: 36px;
+	height: 72px;
+	background-color: #FFFFFF;
+	position: absolute;
+	top: 150px;
+	background-image: url(../img/index/icon-header.png);
+}
+.levelSilderBtn {
+	display: block;
+	width: 36px;
+	height: 72px;
+	background-color: #FFFFFF;
+	position: absolute;
+	top: 60px;
+	background-image: url(../img/index/icon-header.png);
+}
+.levelSilderBtn:hover {
+	background-color: #C0C0C0BB;
+}
+.levelSilderBefore {
+	left: 2px;
+	background-position: -53px -86px;
+	border-radius: 0 10px 10px 0;
+	display: none;
+}
+.levelSilderNext {
+	right: -3px;
+	background-position: -131px -86px;
+	border-radius: 10px 0 0 10px;
+}
+/* 广告透明度轮播 */
+.littleAd {
+	height: 120px;
+	position: relative;
+	margin-bottom: 10px;
+}
+.adPicBox {
+    height: 120px;
+    position: relative; 
+}
+.adPic img {
+    position: absolute;
+    opacity: 1;
+    transition: opacity 1s;
+    border-radius: 10px;
+}
+.adPic {
+	transition: .5s;
+}
+#adSilderBox {
+	height: 14px;
+    width: 180px;
+    position: absolute;
+    z-index: 9;
+    top: 100px;
+    right: 0; 
+}
+.adSilderBtn {
+	float: left;
+    width: 12px;
+    height: 12px;
+    margin-left: 7px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+/* 手机 */
+#mobilePhone {
+	height: 1272px;
+}
+#secondTitle {
+ 	margin-left: 28px;
+    width: 950px;
+    height: 45px;
+    font-size: 12px;
+	padding: 23px 0 0 0;
+}
+.secondTitleText {
+	float: left;
+	font-size: 14px;
+    margin-left: 0;
+    margin-right: 24px;
+    line-height: 32px;
+}
+.secondTitleText a {
+    color: #999;
+}
+.lookMore {
+	float: right;
+	padding-top: 28px;
+	font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+#mobilePhoneBox {
+	float: left;
+	height: 1208px;
+}
+#mobilePhoneBox img {
+	border-radius: 10px;
+}
+.mobilePhoneGoodsNoleft {
+	margin-left: 0;
+}
+/* 笔记本电脑 精品平板 */
+#personalComputer， #wellTablet {
+	height: 670px;
+}
+/* 水平滑动公共样式 */
+.levelSilderLittleBox img {
+	width: 120px;
+	height: 120px;
+	margin: 0 auto;
+	display: block;
+}
+.levelSilderBox {
+	width: 202px;
+	height: 240px;
+	margin: 0;
+	float: left;
+}
+.levelSilderLittleBox {
+    padding-top: 34px;
+    background: #f9f9f9;
+	width: 190px;
+	height: 160px;
+	position: relative;
+}
+.levelSilderBoxDescrib {
+	display: block;
+	height: 32px;
+	width: 190px;
+	background-color: #f3f3f3;
+    color: #777;
+    font-size: 12px;
+    line-height: 32px;
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+.levelSilder {
+	height: 290px;
+	position: relative;
+	overflow: hidden;
+}
+/* 智能穿戴水平滑动 */
+#moreSmartWear {
+  height: 260px;
+}
+.moreSmartWearGoods:hover {
+	box-shadow: none;
+}
+.moreLevelBox {
+	width: 2830px;
+	position: absolute;
+	left: 0;
+	transition: left .5s; 
+}
+/* 图片边框公共样式 */
+.imgBradius {
+	border-radius: 10px;
+}
+/* 底部广告 */
+#bottomAd {
+	height: 200px;
+}
+/* 右侧锚点 */
+#rightPoint {
+	width: 100px;
+	height: 270px;	
+	position: fixed;
+	top: 80px;
+    right: -270px;
+    transition: right 1s ease;
+}
+.pointBtnsLinks {
+    color: #999;
+}
+.pointBtnsLinks:hover {
+	color: #333;
+}
+.pointBtns {
+	text-align: right;
+    padding-right: 7px;
+    line-height: 18px;
+    position: relative;
+    display: block;
+    padding: 10px 12px 10px 0;
+    border-bottom: 1px solid transparent;
+    font-size: 12px;
+}
+.pointBtnsBorder {
+	content: '';
+    position: absolute;
+    width: 2px;
+    background: #cb242b;
+    height: 0;
+    transition: height .5s ease;
+    top: 10px;
+    right: 0;
+}
+#firstPointBtnsLinks {
+	color: #333;
+}
+#firstPointBtnsBorder {
+	height: 18px;
+}
+.noBorder {
+	border: none;
+}
+a:hover {
+	color: #CF0A2C;
+}

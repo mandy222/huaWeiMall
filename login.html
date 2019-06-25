@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>华为帐号-登录</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="shortcut icon" href="img/index/favicon.ico">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
+</head>
+<body>
+	<header id="header" class="t">
+		<div id="headerC" class="c">
+			<img src="img/loginAndRegister/loginLogo.png" alt="">
+			<span>|</span>
+			<a href="index.html" title=""><i id="headerTitle">华为商城</i></a>
+		</div>
+	</header><!-- /header -->
+
+	<main id="mian">
+		<section id="tipsBox" class="t">
+			<span>依据《网络安全法》，为保障您的帐号安全与正常使用，请尽快绑定您的手机号，感谢您的理解及支持！</span>
+		</section> 		
+		<section id="mainPage" class="t">
+			<div id="mainPageC">
+				<div class="loginBox">
+					<p id="loginTitle">
+						<span class="loginStyle" id="acountLogin">账号登录</span>
+						<span class="loginStyle" id="scanLogin">扫码登录</span>
+					</p>
+
+					<div id="acountLoginBox">
+						<p id="errorTipsBox">
+							<i id="errorIcon"></i>
+							<span id="errorTips"></span>
+						</p>
+						<p id="account">
+							<input id="accountInput" type="text" name="" placeholder="手机号/邮件/华为号">
+						</p>
+						<p id="passwd">
+							<input id="passwdInput" type="password" name="" placeholder="密码">
+						</p>
+
+						<p id="messageLoginTips">
+							<a class="tipsText" href="" title="短信验证码登录">
+								<i id="phoneIcon"></i>&nbsp; 短信验证码登录
+							</a>
+						</p>
+						<p>
+							<button id="loginBtn">登录</button>
+						</p>
+
+						<label id="remember">
+							<i id="rememberCheckBox"></i>
+							<a id="rememberHuaWeiC" href="" title="">记住华为账号</a>
+							<a id="more" class="tipsText" href="" title="更多">
+								更多
+							</a>
+						</label>
+
+						<p id="bottomText">
+							<a id="loginTips" class="tipsText bottomTips" href="register.html" title="">注册账号</a>
+							<a class="tipsText bottomTips" href="" title="">忘记密码？</a>
+						</p>
+
+						<p id="otherWays">
+							<span id="leftLine" class="line"></span>
+							<span id="otherWaysText"> 其他方式登录 </span>
+							<span id="rightLine" class="line"></span>
+						</p>
+						<p id="botomIcons">
+							<a href="" title=""><span class="botomLogo" id="qq"></span></a>
+							<a href="" title=""><span class="botomLogo" id="alipay"></span></a>
+							<a href="" title=""><span class="botomLogo" id="weChat"></span></a>	
+						</p>
+					</div>
+
+					<div id="scanLoginBox">
+						<div id="hoverArear">
+							<div id="codeBox">
+								<img src="img/loginAndRegister/code.png" alt="">
+							</div>
+							<div id="phoneIconBox">
+								<img src="img/loginAndRegister/phone.png" alt="">
+							</div>
+						</div>						
+
+						<div id="bottomTipsBox">
+							<p>使用
+								<span class="tipsText">华为移动服务APP</span>
+								扫一扫
+							</p>
+							<p>若您使用华为手机，请进入“设置”>“华为帐号”扫码登录。</p>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</section>	
+	</main>
+
+	<footer id="footer" class="t">
+		<p>
+			<a href="" title="">华为账号用户协议</a><em>|</em>
+			<a href="" title="">关于华为账户与隐私的声明</a><em>|</em>
+			<a href="" title="">常见问题</a>
+		</p>
+		<p id="declaration">Copyright © 2011-2018  华为软件技术有限公司  版权所有  保留一切权利  苏B2-20070200号 | 苏ICP备09062682号-9
+		</p>
+	</footer>
+</body>
+</html>

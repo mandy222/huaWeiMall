@@ -1,0 +1,386 @@
+/* navTop */
+#navTop {
+	height: 40px;
+	background-color: #f9f9f9;
+}
+.topLinks {
+	float: left;
+	position: relative;
+}
+.topLinks::before {
+	content: "";
+    width: 1px;
+    height: 10px;
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    background: #d3d3d3;
+}
+#indexPage::before,
+#login::before,
+#register::before,
+#buyCarBox::before {
+	content: '';
+	width: 0px;
+	height: 0px;
+}
+.topLinks a {
+	float: left;
+	margin: 15px 0;
+	height: 10px;
+	color: #a4a4a4;
+	font-size: 12px;
+	line-height: 10px;
+	padding: 0 9px;
+}
+.topNavDropdown {
+    position: relative;
+    margin: 0 -1px;
+    height: 40px;
+    z-index: 300;
+}
+.topNavDropdown a {
+	position: relative;
+	padding-right: 20px;
+}
+.topNavDropdownLink::before {
+	content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #777;
+    position: absolute;
+    top: 3px;
+    right: 5px;
+}
+.topNavDropdown:hover, #buyCarBox:hover {
+	background-color: white;
+    box-shadow: 0 2px 36px 0 rgba(0,0,0,0.07);
+}
+.topNavDropdown:hover .topNavDropdownLink,
+#buyCarBox:hover #buyCarLink
+ {
+	color: #cb242b;
+}
+.topNavDropdown:hover .topNavDropdownLink::before {
+	border-bottom: 4px solid #cb242b;
+    border-top: 0;
+}
+#buyCarBox {
+	width: 80px;
+	padding-left: 20px;
+	background-color: #A0A0A01E;
+}
+#buyCarBox::before {
+	content: "";
+    width: 14px;
+    height: 14px;
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    background: url(../img/index/icon-header.png) no-repeat;
+}
+.topNavDropdown:hover .mySecondMemu,
+#buyCarBox:hover .mySecondMemu  {
+	display: block;
+}
+.topNavDropdown:hover .topNavDropdown::after {
+	background-color: white;
+}
+.topNavDropdown::after {
+	display: block;
+	content: '';
+	width: 77px;
+	height: 5px;
+	position: absolute;
+	bottom: -1px;
+	background-color: transparent;
+	z-index: 300;
+}
+.mySecondMemu {
+	position: absolute;	
+	background-color: white;
+	z-index: 1;
+	border-radius: 8px 0 8px 8px;
+	display: none;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.07);
+}
+#moreWonderfulMemu {
+	height: 146px;
+	width: 119px;
+	top: 40px;
+	left: -42px;
+}
+#clientMemu {
+	height: 70px;
+	width: 77px;
+	top: 40px;
+	left: 0px;
+}
+.myLinks a {
+	display: inline-block;
+	margin: 0 auto;
+	color: #a4a4a4;
+	text-align: center; 
+	font-size: 12px;
+}
+.wondefulLink a  {
+	width: 100px;
+	padding-top: 20px;
+}
+.serviseLink {
+	width: 77px;
+    height: 20px;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+#navBottom {
+	height: 74px;
+	background-color: white;
+	position: relative;
+}
+#navBottomLeft {
+	height: 40.8px;
+	width: 760px;
+	margin: 17px 0;
+	float: left;
+}
+#search {
+	height: 30px;
+	width: 320px;
+	margin: 22px 30px 0 22px;
+	float: right;
+	position: relative;
+}
+#indexLogo {
+	width: 205px;
+	height: 40.8px;
+}
+#navBottomLinkBox {
+	float: right;
+	line-height: 40.8px;
+}
+.navBottomLinks {
+	float: left;
+	margin-right: 20px;
+}
+.navBottomLinks img {
+	width: 74px;
+	height: 24px;
+}
+.navBottomLinks a {
+	font-size: 16px;
+	color: #333;
+}
+.navBottomLinks:hover {
+	border-bottom: 1.5px solid #CF0A2C;
+}
+.noRedBorder:hover {
+	border-bottom: 1.5px solid #FFFFFF00;
+}
+#searchBox {
+	height: 30px;
+	width: 310px;
+	background-color: #f5f5f5;
+	border: none;
+	outline: none;
+	padding-left: 10px;
+	border-radius: 60px;	
+}
+#searchBox:hover {
+	border: 1px solid #DDD;
+}
+#searchBtn {
+	display: block;
+	height: 30px;
+	width: 30px;
+	background-image: url(../img/index/icon-header.png);
+	background-position: 0 -21px;
+    background-color: #666;
+    position: absolute;
+   	top: 1px;
+    right: -2px;
+    z-index: 9;
+    border-radius: 50px;
+}
+#firstSearchText, #secondSearchText {
+	display: block;
+	font-size: 12px;
+	position: absolute;
+	top: 7px;
+	color: #CF0A2C;
+}
+#firstSearchText {
+	right: 90px;
+}
+#secondSearchText {
+	right: 38px;
+}
+/* 手机导航二级菜单 */
+#phoneSecondMenu {
+	position: absolute;
+	height: 270px;
+	z-index: 2;
+	box-shadow: 0 3px 3px 0 rgba(121,121,121,0.26);
+	background-color: white;
+	top: 60px;
+	padding-top: 10px;
+	display: none;
+}
+#phoneSecondMenuC {
+	height: 288px;
+	font-size: 14px;
+    line-height: 30px;
+}
+#phoneSecondMenuNav {
+	height: 30px;
+	padding: 25px 12px 0 0;
+}
+.photoNavText {
+	float: left;
+	margin-right: 20px;	
+}
+.photoNavText a {
+	color: #717171;
+}
+.photoNavText:first-child a {
+	color:#333;
+}
+.photoNavText:first-child a:hover {
+	color: #ca141d;
+}
+.phonesList {
+	float: left;
+	width: 120px;
+	height: 206px;
+	margin: 0 50px 18px 0;
+	text-align: center;
+}
+.phonesList img {
+	width: 120px;
+	height: 120px;
+	margin-top: 20px;
+}
+#phoneBox .photoPrice {
+	color: #ca141d;
+}
+#phoneBox .photoName {
+	margin-top: 10px;
+}
+
+#phoneSecondMenu::before {
+	content: '';
+	width: 100%;
+	position: absolute;
+	height: 1px;
+	top: 32px;
+	background-color: #40404043;
+}
+a:hover {
+	color: #e01d20;
+}
+#search {
+	position: relative;
+}
+.searchHistory {
+	width: 320px;
+	height: 150px;
+	position: absolute;
+	bottom: -160px;
+	left: 0;
+	z-index: 10;
+	background-color: white;
+	border-top: 1px solid #f2f2f5;
+	border-radius: 10px;
+	display: none;
+}
+.searchHistory p {
+	font-size: 13px;
+    color: #888;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 20px;
+}
+.searchHistory li {
+	color: #333;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.searchHistory li:last-child {
+	border-radius: 0 0 10px 10px;
+}
+.searchHistory li:hover {
+	background: #f0f0f0;
+}
+.siteNavLink {
+	width: 893px;
+    line-height: 20px;
+    right: 0;
+    top: 40px;
+}
+.siteNavLink div {
+	float: left;
+	width: 185px;
+	margin: 22px 0;
+}
+.siteNavLink img {
+	width: 50px;
+}
+.siteNavLink div:nth-child(1) {
+	margin: 30px 0;
+	width: 150px;
+}
+.siteNavLink ul:first-child li {
+	text-align: center;   
+}
+.siteNavLink ul:first-child li a {
+	text-align: center; 
+	width: 100%;
+	margin-top: 5px;
+	padding: 0;
+}
+.myTitle {
+	color: #333;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 20px;
+}
+.siteNavLink li a {
+	width: 80px;
+    text-align: left;
+    padding: 10px 0 0 0;
+}
+.rightText {
+	margin-right: 19px;
+}
+.phoneVesion {
+	position: absolute;
+	top: 40px;
+	right: 0;
+	/*display: none;*/
+}
+.phoneVesion li {
+	height: 120px;
+    line-height: 120px;
+    padding: 24px 10px 0 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.phoneVesion li img {
+	width: 170px;
+}
+.myBuyCar {
+	top: 40px;
+	right: 0px;
+	overflow: hidden;
+	z-index: 99;
+}
+.myBuyCar img {
+	height: 140px;
+	margin: 40px 60px;
+}

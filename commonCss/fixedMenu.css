@@ -1,0 +1,60 @@
+/**** 右侧固定栏 ******/
+#fixedMune {
+	width: 38px;
+	height: 166px;
+	position: fixed;
+    right: 6px;
+    bottom: 20px;
+    z-index: 500;
+}
+.fixedMuneLinks {
+	width: 38px;
+    height: 41px;
+    display: block;
+    position: relative;
+    background-color: rgba(255,255,255,0.9);
+    background-image: url(../img/index/icon-header.png);
+}
+.fixedMuneLinks:nth-child(1) {
+    background-position: -215px -122px;
+}
+.fixedMuneLinks:nth-child(2) {
+    background-position: -291px -122px;
+}
+.fixedMuneLinks:nth-child(3) {
+    background-position: -367px -122px;
+}
+#goTop {
+    background-position: -443px -122px;
+    display: none;
+}
+.fixedMuneLinks:hover .fixedMuneTips {
+	display: block;
+}
+.fixedMuneTips {
+	position: absolute;
+    display: none;
+    width: 76px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: #777;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 36px 0 rgba(0,0,0,0.07);
+    left: -84px;
+    top: 0;
+    font-style: normal;
+}
+.fixedMuneTips:after {
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 6px solid #fff;
+    position: absolute;
+    top: 13px;
+    right: -6px;
+}

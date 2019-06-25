@@ -1,0 +1,158 @@
+.c {
+	width: 998px;
+}
+#header {
+	height: 67px;
+	background-color: #333333FF;
+}
+#header img {
+    margin: 17px 10px 0 4px;
+    float: left;
+}
+#header span {
+	margin: 22px 10px ;
+	font-size: 18px;
+    float: left;
+    color: white;
+}
+#headerTitle {
+ 	color: white;
+    font-size: 18px;
+    float: left;
+    margin: 22px 0;
+    font-weight: 400px;
+ }
+ /* main */ 
+ #main {
+    background-color: #F2F2F2FF;
+    overflow: hidden;
+ }
+ #mianC {
+    background-color: white;
+    height: 400px;
+    width: 420px;
+    margin: 50px auto;
+    padding: 40px 270px 30px 270px;
+    position: relative;
+ }
+ #loginTips {
+    position: absolute;
+    top: -30px;
+    right: 0;
+    font-size: 14px;
+    color: #333;
+ }
+#loginTips a,
+#getCode{
+    color: #007dff;
+ }
+#loginTips a:hover,
+#getCode:hover {
+    color: #0064cc;
+ }
+ .inputBox {
+    margin-top: 10px;
+    background: #f7f7f7;
+    height: 42px;
+    border: 1px solid #d9d9d9;
+    border-radius: 21px;
+ }
+ .errorTips {
+    height: 20px;
+    font-size: 12px;
+    color: #FF0000FF;
+    margin-left: 20px;
+ }
+ .inputKind {
+    width: 90px;
+    height: 42px;
+    float: left;
+    border-right: 1px solid #d9d9d9;
+    padding: 0 16px;
+    line-height: 42px;
+    font-size: 14px;
+    color: #333;
+ }
+ #phoneNum, #email, #againPasswd {
+    letter-spacing: 8px;
+ }
+ .input {
+    height: 42px;
+    width: 270px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    margin-left: 20px;
+ }
+ ::-webkit-input-placeholder {
+    color: rgb(204, 204, 204);
+    font-size: 14px;
+    line-height: 20px;
+}
+#passwd {
+    letter-spacing: 23px;
+}
+#registerBtnBox {
+    text-align: center;
+    margin-top: 10px;
+}
+#registerBtn {
+    width: 200px;
+    height: 40px;
+    background-color: #B40707;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #fff;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 26px;
+}
+#registerBtn:hover {
+    background-color: #C70000;
+}
+#getCode {
+    position: absolute;
+    font-size: 14px;
+    right: 20px;
+    top: 10px;
+}
+/* footer */
+#footer {
+    background-color: #F2F2F2FF;
+    height: 44px;
+    padding: 20px 0 30px 0;
+}
+#footer p {
+    text-align: center;
+}
+#footer p a {
+    font-size: 12px;
+    color: #999;
+    padding: 0 10px;
+}
+#footer p a:hover {
+    text-decoration: underline;
+}
+#footer em {
+    font-size: 12px;
+    line-height: 20px;
+    color: #999;
+}
+#declaration {
+    color: #999;
+    margin-top: 10px;
+}
+#footerC {
+    position: relative;
+}
+#footerC::before {
+    content: '';
+    display: block;
+    width: 960px;
+    height: 1px;
+    background-color: #9999994f;
+    position: absolute;
+    top: -30px;
+    left: 15px;
+}

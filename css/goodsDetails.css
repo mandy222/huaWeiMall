@@ -1,0 +1,605 @@
+/* main */
+#main {
+	position: relative;
+}
+#main::before {
+	content: '';
+	display: block;
+	height: 20px;
+	width: 100%;
+	background-image: linear-gradient(to top, #FFFFFF80, #F9F9F9);
+	top: 0;
+}
+#mianNav {
+	height: 18px;
+	font-size: 12px;
+	text-align: left;
+	padding: 0 0 10px 0;
+	color: #3a3a3a;
+}
+#mianNav a {
+	color: #666;
+}
+#mianNav a:hover {
+	color: #3a3a3a;
+}
+/* 放大镜 */
+#goodDetailsTop {
+	overflow: hidden;
+	position: relative;
+}
+#goodsPhoto {
+	height: 536px;
+	width: 450px;
+	float: left;
+	position: relative;
+}
+#originalPicBox {
+	width: 450px;
+	height: 450px;
+}
+#originalPicBox img {
+	width: 100%;
+	height: 100%;
+}
+#zoomToolBox {
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	top: 0;
+	right: -410px;
+	border: 2px solid #ccc;
+	z-index: 99;
+	overflow: hidden;
+	display: none;
+	background-color: white;
+}
+#zoomToolBox img {
+	width: 200%;
+	height: 200%;
+	position: absolute;
+}
+#square {
+	width: 198px;
+	height: 198px;
+	position: absolute;
+	background-color: #FFFFFF62;
+	border: 1px solid #6D6D6D62;
+	top: 0;
+	left: 0;
+	cursor: move;
+	display: none;
+}
+#smallPicList {
+	width: 450px;
+	height: 68px;
+	margin-top: 18px;
+	position: relative;
+}
+.moveBtn {
+	display: block;
+	top: 0;
+    width: 30px;
+    height: 68px;
+    position: absolute;
+}
+#before {
+	left: 0;
+}
+#next {
+	right: 0;
+}
+.moveBtn {
+	margin-top: 18px;
+	width: 30px;
+	height: 30px;
+	background-image: url(../img/goodsDetails/icon.png);
+}
+#before {
+	background-position: -48px -29px;
+}
+#before:hover {
+	background-position: -48px -59px;
+}
+#next {
+	background-position:  -78px -29px;
+}
+#next:hover {
+	background-position:  -78px -59px;
+}
+#zoomToolbtnsFBox {
+	width: 370px;
+	height: 68px;
+	margin-left: 40px;
+	overflow: hidden;
+	position: relative;
+}
+#zoomToolbtnsBox {
+	width: 445px;
+	height: 68px;
+	position: absolute;
+	transition: .3s;
+	left: 0;
+}
+.zoomToolbtns {
+	float: left;
+	width: 66px;
+	height: 66px;
+	border: 1px solid white;
+	margin: 0 3px;
+}
+.zoomToolbtns:first-child {
+	border: 1px solid #ca141d;
+}
+.zoomToolbtns:hover {
+	border: 1px solid #ca141d;
+}
+.zoomToolbtns img {
+	width: 100%;
+	height: 100%;
+}
+/* 商品选购信息 */
+#goodsInf {
+	width: 730px;
+	height: 649px;
+	float: right;
+}
+#goodsInf p {
+	overflow: hidden;
+}
+#goodsInf a {
+	color: #3a3a3a;
+}
+#goodsName {
+	font-size: 21px;
+    max-height: 84px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+#goodsDescribe {
+	font-size: 14px;
+    padding-right: 40px;
+    margin-bottom: 12px;
+    position: relative;
+    top: -3px;
+    line-height: 20px;
+}
+#goodsDescribe span {
+	margin-right: 15px;
+    color: #ca141d;
+}
+#goodsAtivities {
+	height: 98px;
+	padding: 14px 0 3px 0;
+	background: #f5f5f5;
+}
+.goodsAtivitiesInf {
+	line-height: 30px;
+}
+.goodsInfTitle {
+	float: left;
+    width: 85px;
+    text-indent: 10px;
+}
+.buyingPrice, .detailsPrice {
+	color: #ca141d;
+    padding-right: 3px;
+    font-size: 18px;
+}
+.detailsPrice {
+	font-size: 24px;
+    line-height: 25px;
+}
+.originalPrice {
+	color: #a4a4a4;
+	font-size: 18px;
+}
+.sign {
+	float: left;
+    line-height: 18px;
+    height: 18px;
+    border: 1px solid #ca141d;
+    padding: 0 6px;
+    color: #ca141d;
+    text-align: center;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.explain {
+	float: left;
+	line-height: 30px;
+	position: relative;
+}
+#payExplain::after {
+	content: "";
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 8px;
+    right: -20px;
+    position: absolute;
+    background-position: 0 -148px;
+    background-image: url(../img/goodsDetails/icon.png);
+}
+#serviceNote {
+	height: 58px;
+	margin-top: 10px;
+	overflow: hidden;
+}
+#serviceNote p {
+	display: block;
+	height: 30px;
+}
+#saleState {
+	margin-left: 85px;
+}
+#saleState em {
+	width: 1px;
+    height: 12px;
+    background: #e6e6e6;
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+    top: 3px;
+}
+#location, .chooseBox {
+	height: 28px;
+    line-height: 28px;
+    padding: 0 34px 0 10px;
+    margin-right: 20px;
+    float: left;
+    border: 1px solid #C0C0C0;
+    border-radius: 2px;
+    position: relative;
+    cursor: pointer;
+}
+#location::after,
+.chooseBox::after {
+	display: block;
+	content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 4px;
+    right: 8px;
+    background-image: url(../img/goodsDetails/icon.png);
+}
+.red {
+	color: red;
+}
+#goodsId {
+	overflow: hidden;
+	border-bottom: 1px solid #C0C0C0;
+}
+#chooseColor {
+	margin-top: 10px;   
+}
+.goodsKind {
+	height: 38px;
+	width: 85px;
+    border: 1px solid #a4a4a4;
+    text-align: center;
+    border-radius: 2px;
+    padding: 2px 12px;	
+	margin-right: 10px;
+	float: left;
+	cursor: pointer;
+}
+#chooseColor span {
+	float: left;
+	line-height: 40px;
+}
+#chooseColor img {
+	float: left;
+}
+#chooseVison,
+#choosePlan {
+	margin-top: 8px;
+	height: 40px;
+	line-height: 40px;
+}
+#chooseVison ul {
+	height: 30px;
+}
+.visonKind {
+	line-height: 30px;
+	float: left;
+	text-align: center;
+    height: 30px;
+    width: 105px;
+    border-radius: 2px;
+    padding: 0 12px;
+    margin-right: 10px;
+    border: 1px solid #a4a4a4;
+    cursor: pointer;
+}
+.visonKind a {
+	display: block;
+	height: 30px;
+    width: 105px;
+}
+#plan {
+	border: 1px solid #ca141d;
+	width: 55px;
+}
+.active {
+	border: 1px solid #ca141d;
+}
+.chooseBox {
+	height: 30px;
+}
+#sureServer {
+	overflow: hidden;
+}
+#recommend {
+	float: left;
+	overflow: hidden;
+	margin: 10px 0;
+    line-height: 30px;
+}
+#recommend a {
+	background: #f5f5f5;
+    line-height: 30px;
+    padding: 0 20px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 2px;
+}
+#recommend a:hover {
+	color: #ca141d;
+}
+#chooseGoods {
+	clear: both;
+	overflow: hidden;
+	height: 30px;
+	line-height: 30px;
+}
+#chooseGoodsDetail {
+	color: #ca141d;
+} 
+#buyBtn {
+	height: 46px;
+	clear: both;
+	margin-left: 10px;
+}
+#buyBtn input {
+	float: left;
+    width: 41px;
+    height: 44px;
+    line-height: 44px;
+    border: 0;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid #e2e2e2;
+    border-right: none;
+}
+.changeNum {
+	display: block;
+    font-size: 16px;
+    width: 21px;
+    height: 21px;
+    line-height: 22px;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    border: 1px solid #e2e2e2;
+    cursor: pointer;
+}
+.buyBtns {
+	margin-left: 10px;
+	display: inline-block;
+    width: 172px;
+    height: 46px;
+    font-size: 18px;
+    line-height: 46px;
+    text-align: center;    
+    border-radius: 2px;
+    border: 0;
+    cursor: pointer;
+}
+.buyBtns span {
+	color: #fff;
+}
+#addBuycar {
+	background-color: #fc600c;
+}
+#buyNow {
+	background-color: #ca151d;
+}
+.buyBtns:hover {
+	opacity: 0.8;
+}
+.sliderBtnsDisabled {
+    cursor: not-allowed;
+    color: #999;
+}
+#cornerIconBox {
+	width: 42px;
+	height: 87px;
+	border: 1px solid #a4a4a4;
+	position: absolute;
+	right: 0;
+	bottom: 40px;
+}
+.cornerIcon {
+	display: block;
+	height: 42px;
+	width: 42px;
+	background-image: url(../img/goodsDetails/icon.png);
+}
+.cornerIcon:hover {
+	background-color: #f7f7f7;
+}
+.cornerIcon:first-child {
+	border-bottom: 1px solid #a4a4a4;
+	background-position: -114px 4px;
+}
+.cornerIcon:last-child {
+	background-position: -114px -50px;
+}
+ /*商品具体信息 */
+#goodDetailsBottom {
+	margin-top: 20px;
+	overflow: hidden;
+}
+#goodDetailsBottom img {
+	width: 100%
+}
+#bottomNavBox {
+	height: 31px;
+	border-top: 1px solid #A0A0A0AF;
+	padding: 20px 0;
+}
+#bottomNav {
+	height: 40px;
+	text-align: center;
+	background-color: white;
+	z-index: 99;
+	padding-bottom: 10px;
+}
+#addBuycarBtn {
+	float: right;
+    margin-top: 10px;
+    width: 120px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    color: white;
+    background-color: #ca151d;
+    cursor: pointer;  
+    visibility: hidden;
+}
+#addBuycarBtn:hover {
+	opacity: .8;
+}
+.bottomNavLink {
+	display: inline-block;
+	height: 40px;
+	margin: auto 20px;
+	border-bottom: 1.5px solid white;
+	font-size: 18px;
+	line-height: 40px;	
+}
+.bottomNavLink a {
+	color: #a4a4a4;
+}
+#goodsDetails {
+	padding-top: 50px;
+}
+#standardParameter {
+	padding-top: 50px;
+}
+#otherParameter {
+	background-color: #F5F5F5FF;
+}
+#afterSale {
+	padding-top: 50px;
+}
+#userComment {
+	padding-top: 50px;
+}
+#userCommentTop{
+	background-color: #F5F5F5FF;
+}
+/* 浏览记录 */
+#browsingHistory {
+	height: 295px;
+	margin: 30px auto 60px auto;
+}
+#browsingHistory h2 {
+	font-size: 18px;
+    height: 27px;;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 400;
+}
+#historyGoodsBox {
+	height: 268px;
+	position: relative;
+}
+.historyBtn {
+	display: block;
+	position: absolute;
+	width: 43px;
+	height: 134px;
+	top: 50px;
+	cursor: pointer;
+}
+#historyBefore {
+	left: 0;
+}
+#historyNext {
+	right: 0;
+}
+.historyBtn i {
+	display: block;
+	height: 16px;
+	width: 9px;
+	margin: 59px 17px; 
+	background-image: url(../img/goodsDetails/btnIcon.png);
+}
+.historyBeforeBtn {
+	background-position: -36px -16px;
+}
+.historyNextBtn {
+	background-position: -36px -32px;
+}
+.historyBtnDisabled {
+    cursor: not-allowed;
+}
+/* 控制光标和箭头变灰 */
+.historyNextDisabled:hover {
+    cursor: not-allowed;
+    background-position: -27px -32px;
+}
+.historyBeforeDisabled:hover {
+    cursor: not-allowed;
+    background-position: -27px -16px;
+}
+/* 控制 hover 变红 */
+.historyNextAbled:hover .historyNextBtn {
+    background-position: -54px -32px;
+}
+.historyBeforeAbled:hover .historyBeforeBtn {
+    background-position: -54px -16px;
+}
+
+/* 水平轮播 */
+#historySilder {
+	width: 1100px;
+	height: 268px;
+	margin: 0 43px;
+	overflow: hidden;
+	position: relative;
+}
+#historySilderBox {
+	width: 2000px;
+	height: 268px;
+	position: absolute;
+	left: 0;
+	transition: left .5s;
+}
+.historyGoods img {
+	width: 134px;
+    height: 134px;
+}
+.historyGoods {
+	margin-top: 20px;
+	float: left;
+	height: 248px;
+	width: 220px;
+	text-align: center;
+}
+.historyGoodsName {
+	margin-top: 30px;
+	height: 38px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #3a3a3a;
+}
+.historyGoodsPrice {
+	color: #ca141d;
+    font-size: 14px;
+}

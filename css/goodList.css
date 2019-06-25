@@ -1,0 +1,176 @@
+#main {
+	background-color: #FFFFFF80;
+}
+#main::before {
+	content: '';
+	display: block;
+	height: 20px;
+	width: 100%;
+	background-image: linear-gradient(to top, #FFFFFF80, #F9F9F9);
+	top: 0;
+}
+#mainC {
+	overflow: hidden;
+	padding-bottom: 30px;
+}
+#nowPosition {
+	height: 18px;
+	font-size: 12px;
+	color: #172c45;
+	text-align: left;
+	padding: 0 0 10px 0;
+}
+#nowPosition a {
+	color: #172c45;
+}
+#goodsProperty {
+	border: 1px solid #dedede;
+}
+#goodsProperty div {
+	height: 50px;
+}
+#goodsSort {
+	border-bottom: 1px solid #dedede;; 
+}
+
+.goodsPropertyText li {
+	float: left;
+    text-align: right;    
+    position: relative;
+    line-height: 50px;
+    margin-left: 20px;
+}
+.goodsPropertyTitle {
+	width: 86px;
+	color: #3a3a3a;
+	margin-left: -20px!important;
+}
+.goodsOrderText li {
+    margin-right: 10px;
+}
+#upTimeBox {
+    margin-left: 40px;
+}
+#upTime {
+    margin-left: -30px;
+}
+.goodsPropertyText li a {
+	position: relative;
+	color: #999;	
+}
+#all, #upTime {
+	color: #ca141d;
+}
+.goodsPropertyText li a:hover {
+	color: #666
+}
+.selectSymbol {
+	height: 10px;
+    margin-top: -5px;
+	position: absolute;
+    right: -10px;
+    top: 10px;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    width: 8px;
+    background-image: url(../img/goodsList/icons.png);
+}  
+#upTimeIcon {
+	background-position: 0 -110px;;
+}
+#price {
+	background-position: 0 -70px;
+}
+#evaluationNum {
+    background-position: 0 -29px;
+}
+/* 商品列表 */
+.goodsBox {
+	margin: 0 20px 20px 0;
+    border: 1px solid #dedede;
+    height: 362px;
+    width: 222px;
+    position: relative;
+    text-align: center;
+	margin: 20px 20px 20px 0;
+	float: left;
+}
+.goodsBox:hover {
+	border: 1px solid #ca141d;
+}
+.goodsBox img {
+	width: 180px;
+    height: 180px;
+    margin-top: 30px;
+}
+.goodsName a {
+	display: block;
+	color: #666;
+	line-height: 50px;
+	font-size: 13px;
+}
+.goodsPrice {
+	color: #ca141d;
+    line-height: 60px;
+    font-size: 19px;
+    font-weight: 400;
+}
+.buyBtn {
+	position: absolute;
+	bottom: 0;
+	height: 30px;
+	width: 222px;
+	line-height: 30px;
+	border-top: 1px solid #dedede;
+}
+.selectBuy {
+	float: left;
+	width: 110px;
+	border-right: 1px solid #dedede;
+	color: #ca141d;
+	font-size: 13px;
+}
+.selectBuy:hover {
+	background-color: #ca141d;
+	border-right: 1px solid #ca141d;
+	color: white;
+}
+.evaluationPerson {
+	color: #666;
+}
+#pageBtn {
+	width: 225px;
+	height: 31px;
+	float: right;
+	margin-top: 20px;
+}
+#pageBtnBox li {
+	float: left;
+	line-height: 31px;
+	font-size: 12px;
+	color: #adadad;
+    
+}
+.btns {
+	width: 29px;
+	height: 29px;
+	border: 1px solid #dddcdb;
+	text-align: center;
+	margin-right: 10px; 
+	background-color: #fafafa;
+}
+.pageNum a {
+	color: #666;
+}
+.seletedPageNum a {
+	color: #ca141d;
+}
+.pageNum {
+	margin: 0 16px 0 0;
+	padding-left: 12px; 
+}
+#lastBtn {
+	margin-right: 0;
+}
+
