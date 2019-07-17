@@ -219,19 +219,19 @@ $(function() {
 	}
 
 	$(document).scroll(function() {
-		if ($(document).scrollTop() > goodsDetailsTop-2) {
+		if ($(document).scrollTop() > goodsDetailsTop-2 && $(document).scrollTop() < standardParameterTop-2) {
 			changeNavStyle(0);
-		}
-		if ($(document).scrollTop() > standardParameterTop-2) {
+		}		
+		if ($(document).scrollTop() > standardParameterTop-2 && $(document).scrollTop() < afterSaleTop-2) {
 			changeNavStyle(1);
-		}
-		if ($(document).scrollTop() > afterSaleTop-2) {
+		}				
+		if ($(document).scrollTop() > afterSaleTop-2 && $(document).scrollTop() < userCommentTop-2) {
 			changeNavStyle(2);
-		}
+		}				
 		if ($(document).scrollTop() > userCommentTop-2) {
 			changeNavStyle(3);
 		}
-	})
+	});
 	
 
 	// *********** 浏览记录轮播 **********************
